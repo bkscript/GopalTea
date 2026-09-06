@@ -1,6 +1,6 @@
 // ===== गोपाल चायवाला — साइट सेटिंग्स =====
 // यहां अपना असली WhatsApp नंबर डालें (देश कोड के साथ, बिना + या स्पेस के — जैसे 919812345678)
-const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+const WHATSAPP_NUMBER = "919414939839";
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
