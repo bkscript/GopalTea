@@ -50,3 +50,9 @@ if (waFloat && /^[1-9]\d{7,14}$/.test(WHATSAPP_NUMBER)) {
   waFloat.target = "_blank";
   waFloat.rel = "noopener";
 }
+
+const memoryShare = document.getElementById("memoryShare");
+if (memoryShare) {
+  const memoryMessage = "नमस्ते गोपाल जी 🙏\nमेरे पुराने आयोजन में गोपाल चाय सर्विस की एक तस्वीर है। मैं इसे आपकी वेबसाइट की गैलरी के लिए भेजना चाहता/चाहती हूँ।";
+  memoryShare.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(memoryMessage)}`;
+}
