@@ -43,3 +43,10 @@ form.addEventListener("submit", (e) => {
 // फुटर वाला WhatsApp लिंक भी सेट कर दो
 const waLink = document.getElementById("waLink");
 if (waLink) waLink.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+const waFloat = document.getElementById("waFloat");
+if (waFloat && /^[1-9]\d{7,14}$/.test(WHATSAPP_NUMBER)) {
+  waFloat.href = `https://wa.me/${WHATSAPP_NUMBER}`;
+  waFloat.target = "_blank";
+  waFloat.rel = "noopener";
+}
